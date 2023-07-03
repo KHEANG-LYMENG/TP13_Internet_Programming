@@ -30,8 +30,8 @@
     <a-modal v-model:visible="visible" :title="`${detailObject.name } | ${dateFormation(new Date(detailObject.created))}`" @ok="handleOk">
         <p>Id: {{ detailObject._id }}</p>
         <p>Name: {{ detailObject.name }}</p>
-        <p>Category: {{ detailObject.subcategory?.name }} | {{ detailObject.subcategory?._id }}</p>
-        <p>SubCategory: {{ detailObject.category?.name }} | {{ detailObject.category?._id }}</p>
+        <p>Category: {{ detailObject.category?.name }} | {{ detailObject.category?._id }}</p>
+        <p>SubCategory: {{ detailObject.subcategory?.name }} | {{ detailObject.subcategory?._id }}</p>
         <p>User: {{ detailObject.user?.username }} | {{ detailObject.user?._id }}</p>
         <img style="width: 50%;" :src="`${store.state.fileUrl}/${detailObject.image}`" alt="">
         <a-divider orientation="left" style="font-weight: bold;">Price</a-divider>
