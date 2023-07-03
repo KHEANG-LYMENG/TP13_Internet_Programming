@@ -4,7 +4,7 @@
     </svg>
     
 
-    <a-modal v-model:visible="visible" :title="`New Category`" >
+    <a-modal v-model:visible="visible" :title="`New Sub Category`" >
         <div class="input" v-if="!isLoading">
             <label for="name">Sub Category name : </label>
             <div class="name_input">

@@ -6,7 +6,7 @@
     <!--Confirm-->
     <a-modal
     v-model:visible="isDelete"
-    title="Delete Category"
+    title="Delete Sub Category"
     
     @ok="hideModal"
     >   
